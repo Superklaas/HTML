@@ -1,9 +1,10 @@
 
-/* Style used for whole document */
+/* Style for whole document */
 
 body {
-background: bisque;
+background: blanchedalmond;
 font-family: "Palatino Linotype", "Palatino", serif;
+text-align: center;
 }
 
 /* Style for headings */
@@ -11,7 +12,7 @@ font-family: "Palatino Linotype", "Palatino", serif;
 h1 {
 background-color:black;
 color:red;
-font-size: 28px;
+font-size: 32px;
 }
 
 h2 {
@@ -22,7 +23,7 @@ font-size: 25px;
 h3 {
 background-color:red;
 font-size: 22px;
-margin-bottom: 15px;
+margin-bottom: 20px;
 }
 
 /* Style for introduction */
@@ -37,9 +38,21 @@ margin-top: 20px;
 }
 
 /* Style for song */
-.song {}
+
+.song audio {
+width: 300pt;
+margin-top: 0pt;
+margin-bottom: 0pt;
+margin-right: auto;
+margin-left: auto;
+}
 
 /* Style for ingredients */
+
+table.center {
+    margin-left:auto;
+    margin-right:auto;
+}
 
 .ingredients th, td {
 text-align: center;
@@ -64,7 +77,11 @@ width: 95%;
 }
 
 /* Style for tutorial */
-.tutorial {}
+
+.tutorial video {
+width: 300pt;
+height: 180pt;
+}
 
 
 /* COLOR CODES FROM WEBSITE COOLORS */
