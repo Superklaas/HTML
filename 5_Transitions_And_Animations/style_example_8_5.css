@@ -1,0 +1,17 @@
+.demo {
+width: 5rem;
+height: 5rem;
+font-size: 1rem;
+background-color: red;
+color: yellow;
+transition: background-color 1s, width 2s linear,
+height 2s ease, color 3s, transform 2s, font-size 3s linear;
+}
+.demo:hover {
+width: 35rem;
+height: 35rem;
+font-size: 5rem;
+background-color: yellow;
+color: red;
+transform: rotate(360deg);
+}
