@@ -1,0 +1,77 @@
+
+/* Style used for whole document */
+
+body {
+background: bisque;
+font-family: "Palatino Linotype", "Palatino", serif;
+}
+
+/* Style for headings */
+
+h1 {
+background-color:black;
+color:red;
+font-size: 28px;
+}
+
+h2 {
+background-color:yellow;
+font-size: 25px;
+}
+
+h3 {
+background-color:red;
+font-size: 22px;
+margin-bottom: 15px;
+}
+
+/* Style for introduction */
+
+#text_introduction {
+font-size: 18px;
+line-height: 1.5;
+}
+
+#image_introduction {
+margin-top: 20px;
+}
+
+/* Style for song */
+.song {}
+
+/* Style for ingredients */
+
+.ingredients th, td {
+text-align: center;
+width: 200px;
+}
+
+.name_ingredient {
+font-size: 18px;
+}
+
+.image_ingredient img {
+width: 60%;
+height: 80%;
+}
+
+.image_ingredient td {
+height: 150px;
+}
+
+.audio_ingredient td audio {
+width: 95%;
+}
+
+/* Style for tutorial */
+.tutorial {}
+
+
+/* COLOR CODES FROM WEBSITE COOLORS */
+--claret: #831c34ff;
+--catawba: #7d3248ff;
+--old-lavender: #705d70ff;
+--celadon: #acd8aaff;
+--rifle-green: #4b5842ff;
+--silver-pink: #bfa89eff;
+--dark-khaki: #b5ba72ff;
