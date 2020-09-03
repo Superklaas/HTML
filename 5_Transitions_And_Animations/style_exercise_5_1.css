@@ -1,0 +1,10 @@
+div {
+background-color: red;
+transition-property: background-color;
+transition-duration: 3s;
+transition-timing-function: ease-in-out;
+}
+
+div:hover {
+background-color: green;
+}
