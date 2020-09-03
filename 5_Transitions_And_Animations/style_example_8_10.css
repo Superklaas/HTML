@@ -1,0 +1,28 @@
+@keyframes fader {
+0%, 100% { background-color: red; }
+25% { background-color: green; }
+50% { background-color: blue; }
+75% { background-color: yellow; }
+}
+@keyframes sizer {
+from, to {width: 10rem; height: 10rem; }
+50% { width: 20rem; height: 20rem; }
+}
+@keyframes transformer {
+0% { transform: rotate(0deg) }
+50% { transform: rotate(180deg) }
+100% { transform: rotate(360deg) }
+}
+@keyframes cornerifier {
+from { border-radius: 0}
+50% { border-radius: 50% }
+to { border-radius: 0 }
+}
+
+div {
+margin: 5rem auto; width: 5rem; height: 5rem;
+animation-name: fader, sizer, transformer, cornerifier;
+animation-duration: 2s, 5s, 3s, 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}

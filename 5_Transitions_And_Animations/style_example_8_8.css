@@ -1,0 +1,15 @@
+@keyframes myAnimationName {
+0% { background-color: red; }
+25% { background-color: green; }
+50% { background-color: blue; }
+100% { background-color: yellow; }
+}
+#subject {
+width: 5rem; height: 5rem;
+animation-name: myAnimationName;
+animation-duration: 5s; /* Transition between first to last keyframe takes 5s */
+animation-iteration-count: infinite;
+animation-direction: alternate;
+/*animation-play-state: paused;*/
+animation-timingfunction: ease;
+}

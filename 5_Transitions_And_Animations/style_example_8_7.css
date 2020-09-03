@@ -1,0 +1,16 @@
+@keyframes myAnimationName {
+    from { /* First keyframe */
+        background-color: red;
+        color: green;
+    }
+    to { /* Last keyframe */
+        background-color: green;
+        color: red;
+    }
+}
+
+#subject {
+width: 5rem; height: 5rem;
+animation-name: myAnimationName;
+animation-duration: 10s; /* Transition between first to last keyframe takes 5s */
+}
