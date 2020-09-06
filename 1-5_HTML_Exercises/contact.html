@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact.html</title>
+</head>
+<body>
+<h1>Contact us</h1>
+<div>
+    Fill in your questions in the form below.<br>
+    We will answer as soon as possible.<br>
+    All fields are required.
+</div>
+<br>
+<div>
+    <form method="post" action="file.htm" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Send us your questions</legend>
+            <ol>
+                <li>Name  <input type="text" name="name" size="15" maxlength="15" required="required"/></li>
+                <li>Email <input type="email" name="email" size="20" maxlength="20" required="required"/></li>
+                <li>Subject
+                    <select name="subject">
+                        <option value="be">Technical deficit</option>
+                        <option value="nl">New customer</option>
+                        <option value="fr">Other question</option>
+                    </select>
+                </li>
+                <li>Message <textarea name="message" rows="3" cols="40" required="required"></textarea></li>
+            </ol>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </div>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
