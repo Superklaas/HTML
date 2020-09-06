@@ -16,90 +16,89 @@
     </nav>
 </header>
 <br>
-<div>
+<form method="post" action="file.htm" enctype="multipart/form-data">
     <h2>Fill in this form</h2>
-    <form method="post" action="file.htm" enctype="multipart/form-data">
-        <ol>
-            <li>Name: <input type="text" name="name" placeholder="Jozef De Beenhouwer" size="10" maxlength="15" required="required"/></li>
-            <li>Question: <textarea name="question" rows="3" cols="40"></textarea></li>
-            <li>Bedsize:
-                <input type="radio" name="bedSize" value="K" />King
-                <input type="radio" name="bedSize" value="Q" checked/>Queen
-            </li>
-            <li>Extras:
-                <input type="checkbox" name="extras" value="foot"/>Footboard
-                <input type="checkbox" name="extras" value="drawers" checked />Drawers
-            </li>
-            <li>Picture:
-                <input type="file" name="profilePicture"/>
-            </li>
-            <li>Country:
-                <select name="country">
-                    <option value="be">Belgium</option>
-                    <option value="nl">Netherlands</option>
-                    <option value="fr">France</option>
-                </select>
-            </li>
-            <li>
-                <fieldset>
-                    <legend>Personal details</legend>
-                    First name:
-                    <input type="text" name="firstName"/>
-                    Last name:
-                    <input type="text" name="lastName"/>
-                </fieldset>
-            </li>
-            <li>Check in date:
-                <input type="date"/>
-            </li>
-            <li>
-                Check in time:
-                <input type="time" value="12:15">
-            </li>
-            <li>
-                Appointment:
-                <!-- Expected format: yyyy-MM-ddThh:mm+02:00 -->
-                <input type="datetime" value="2012-07-15T12:45+01:00" />
-            </li>
-            <li>
-                Appointment:
-                <!-- Expected format: yyyy-MM-ddThh:mm -->
-                <input type="datetime-local" value="2012-07-15T12:45" />
-            </li>
-            <li>
-                Number of children:
-                <input type="number" min="0" max="99" step="1" value="50"/>
-                <input type="range" min="1" max="10" step="1" value="5"/>
-            </li>
-            <li>
-                Skin color:
-                <input type="color" value="red">
-            </li>
-            <li>
-                Language:
-                <input list="myLanguage"/>
-                <datalist id="myLanguage">
-                    <option value="Dutch"/>
-                    <option value="English"/>
-                    <option value="French"/>
-                    <option value="German"/>
-                </datalist>
-            </li>
-            <li>
-                State of mind:
-                <progress value="25" max="100"/>
-            </li>
-            <li>
-                State of body:
-                <meter value="10" min="1" max="100"/>
-            </li>
-        </ol>
-        <div>
-            <button type="submit">Submit</button>
-            <button type="reset">Clear</button>
-        </div>
-    </form>
-</div>
+    <ol>
+        <li>Name: <input type="text" name="name" placeholder="Jozef De Beenhouwer" size="10" maxlength="15" required="required"/></li>
+        <li>Question: <textarea name="question" rows="3" cols="40"></textarea></li>
+        <li>Bedsize:
+            <input type="radio" name="bedSize" value="K" />King
+            <input type="radio" name="bedSize" value="Q" checked/>Queen
+        </li>
+        <li>Extras:
+            <input type="checkbox" name="extras" value="foot"/>Footboard
+            <input type="checkbox" name="extras" value="drawers" checked />Drawers
+        </li>
+        <li>Picture:
+            <input type="file" name="profilePicture"/>
+        </li>
+        <li>Country:
+            <select name="country">
+                <option value="be">Belgium</option>
+                <option value="nl">Netherlands</option>
+                <option value="fr">France</option>
+            </select>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Personal details</legend>
+                First name:
+                <input type="text" name="firstName"/>
+                Last name:
+                <input type="text" name="lastName"/>
+            </fieldset>
+        </li>
+        <li>Check in date:
+            <input type="date"/>
+        </li>
+        <li>
+            Check in time:
+            <input type="time" value="12:15">
+        </li>
+        <li>
+            Appointment:
+            <!-- Expected format: yyyy-MM-ddThh:mm+02:00 -->
+            <input type="datetime" value="2012-07-15T12:45+01:00" />
+        </li>
+        <li>
+            Appointment:
+            <!-- Expected format: yyyy-MM-ddThh:mm -->
+            <input type="datetime-local" value="2012-07-15T12:45" />
+        </li>
+        <li>
+            Number of children:
+            <input type="number" min="0" max="99" step="1" value="50"/>
+            <input type="range" min="1" max="10" step="1" value="5"/>
+        </li>
+        <li>
+            Skin color:
+            <input type="color" value="red">
+        </li>
+        <li>
+            Language:
+            <input list="myLanguage"/>
+            <datalist id="myLanguage">
+                <option value="Dutch"/>
+                <option value="English"/>
+                <option value="French"/>
+                <option value="German"/>
+            </datalist>
+        </li>
+        <li>
+            State of mind:
+            <progress value="25" max="100"/>
+        </li>
+        <li>
+            State of body:
+            <meter value="10" min="1" max="100"/>
+        </li>
+    </ol>
+    <div>
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </div>
+</form>
+
 <!--deprecated since HTML 5.2-->
 <div>
     <button type="menu" menu="myMenu">Menu</button>
