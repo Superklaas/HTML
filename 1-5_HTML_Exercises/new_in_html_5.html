@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>html5</title>
+</head>
+<body>
+<header>
+    <h1>RealDolmen</h1>
+    <p>We make ICT work for your business</p>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="education.html">Education</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="consultancy.html">Consultancy</a>
+    </nav>
+</header>
+<br>
+<div>
+    <h2>Fill in this form</h2>
+    <form method="post" action="file.htm" enctype="multipart/form-data">
+        <ol>
+            <li>Name: <input type="text" name="name" placeholder="Jozef De Beenhouwer" size="10" maxlength="15" required="required"/></li>
+            <li>Question: <textarea name="question" rows="3" cols="40" vertical-align="middle"></textarea></li>
+            <li>Bedsize:
+                <input type="radio" name="bedSize" value="K" />King
+                <input type="radio" name="bedSize" value="Q" checked/>Queen
+            </li>
+            <li>Extras:
+                <input type="checkbox" name="extras" value="foot"/>Footboard
+                <input type="checkbox" name="extras" value="drawers" checked />Drawers
+            </li>
+            <li>Picture:
+                <input type="file" name="profilePicture"/>
+            </li>
+            <li>Country:
+                <select name="country">
+                    <option value="be">Belgium</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="fr">France</option>
+                </select>
+            </li>
+            <li>
+                <fieldset>
+                    <legend>Personal details</legend>
+                    First name:
+                    <input type="text" name="firstName"/>
+                    Last name:
+                    <input type="text" name="lastName"/>
+                </fieldset>
+            </li>
+            <li>Check in date:
+                <input type="date"/>
+            </li>
+            <li>
+                Check in time:
+                <input type="time" value="12:15">
+            </li>
+            <li>
+                Appointment:
+                <!-- Expected format: yyyy-MM-ddThh:mm+02:00 -->
+                <input type="datetime" value="2012-07-15T12:45+01:00" />
+            </li>
+            <li>
+                Appointment:
+                <!-- Expected format: yyyy-MM-ddThh:mm -->
+                <input type="datetime-local" value="2012-07-15T12:45" />
+            </li>
+            <li>
+                Number of children:
+                <input type="number" min="0" max="99" step="1" value="50"/>
+                <input type="range" min="1" max="10" step="1" value="5"/>
+            </li>
+            <li>
+                Skin color:
+                <input type="color" value="red">
+            </li>
+            <li>
+                Language:
+                <input list="myLanguage"/>
+                <datalist id="myLanguage">
+                    <option value="Dutch"/>
+                    <option value="English"/>
+                    <option value="French"/>
+                    <option value="German"/>
+                </datalist>
+            </li>
+            <li>
+                State of mind:
+                <progress value="25" max="100"/>
+            </li>
+            <li>
+                State of body:
+                <meter value="10" min="1" max="100"/>
+            </li>
+        </ol>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+        </div>
+    </form>
+</div>
+<!--deprecated since HTML 5.2-->
+<div>
+    <button type="menu" menu="myMenu">Menu</button>
+    <menu id="myMenu" type="context">
+        <menuitem>Home</menuitem>
+        <menuitem>Admin</menuitem>
+        <menuitem>Login</menuitem>
+    </menu>
+</div>
+<br>
+<div>
+    <details>
+        <summary>Jimi Hendrix</summary>
+        <h1>Jimi Hendrix</h1>
+        <p>Jimi Hendrix was a famous guitar player</p>
+        <a href="jimi.html">More details</a>
+    </details>
+</div>
+<div>
+    <article>
+        <h2>Breaking news</h2>
+        <section>News text</section>
+        <section>User comments</section>
+        <aside>
+            The comments do not represent the vision of <mark>RealDolmen</mark>
+        </aside>
+    </article>
+</div>
+<div>
+    <figure>
+        <img src="bargraph.png" alt="Revenue chart"/>
+        <figcaption>The internal revenue chart displays an increase in profit.</figcaption>
+    </figure>
+</div>
+<div>
+    <p>
+        I'm taking a break from work,
+        <time datetime="2020-07-15">when all this is done</time>.
+    </p>
+</div>
+<ruby>
+    東<rt>tō</rt>
+    京<rt>kyō</rt>
+</ruby>
+<br><br><hr>
+<footer>
+    Copyright 2012 <bdi>nemloDlaeR</bdi>
+    <a href="jobs.html">Looking for a job?</a>
+</footer>
+</body>
+</html>
